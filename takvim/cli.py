@@ -251,7 +251,8 @@ class CalendarView:
         for i, ev in enumerate(evs):
             on = self.focus == "plans" and self.cursor == i
             t.append("\n› " if on else "\n  ", style="vurgu")
-            line = Text(f"{fmt_time(ev):<13}", style="secili" if on else "plan")
+            line = Text()
+            line.append(f"{fmt_time(ev):<13}", style="secili" if on else "plan")
             line.append(ev["title"], style="secili" if on else "")
             if ev["note"]:
                 line.append(f"  ({ev['note']})", style="soluk")

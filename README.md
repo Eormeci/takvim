@@ -2,6 +2,8 @@
 
 Terminalde akan, tamamen klavyeyle kullanılan sade bir takvim.
 
+![takvim ekran görüntüsü](docs/ekran.png)
+
 ## Kurulum
 
 ```bash
